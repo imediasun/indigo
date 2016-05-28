@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html ng-app="angularjs-starter">
+
+  
+
+  <head lang="en">
+
+    <meta charset="utf-8">
+
+    <title>Custom Plunker</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.3/angular.js"></script>
+
+    
+<link
+    rel="stylesheet"
+    href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css"  >
+  <link
+    rel="stylesheet"
+    href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"  >
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+      document.write('<base href="' + document.location + '" />');
+
+    </script>
+
+    <script src="pagination.js"></script>
+
+    <script src="app.js"></script>
+
+  </head>
+
+  <style>
+  ul li{
+  list-style:none;border-bottom:1px solid #ee9;
+  padding-left:20px;
+  padding-right:20px;
+  }
+  ul li.listina:nth-child(even) {background: #eee}
+  .listing{
+  display:inline-block;
+  margin-left:2px;
+  
+  }
+  </style>
+
+  <body ng-controller="MainCtrl">
+
+    <ul>
+	<div class="listing">
+	Name&nbsp;
+            <a ng-click="ordern('name')">
+              <i class="icon-sort"></i>
+            </a>
+    <li class="listina" ng-repeat="item in data | orderBy:predicaten:reversen" >{{item.name}}</li>
+	</div>
+	<div class="listing">
+	Lastname&nbsp;
+            <a ng-click="orderl('lastname')">
+              <i class="icon-sort"></i>
+            </a>
+ <li  class="listina" ng-repeat="item in data | orderBy:predicatel:reversel">{{item.lastname}}</li>
+	</div>
+	<div class="listing">
+		Address&nbsp;
+            <a ng-click="ordera('address')">
+              <i class="icon-sort"></i>
+            </a>
+	<li  class="listina" ng-repeat="item in data | orderBy:predicatea:reversea">{{item.address}}</li>
+	</div>
+	<div class="listing">
+	Email&nbsp;
+            <a ng-click="ordere('email')">
+              <i class="icon-sort"></i>
+            </a>
+	<li  class="listina" ng-repeat="item in data | orderBy:predicatee:reversee">{{item.email}}</li>
+	</div>
+    </ul>
+
+    <pagination num-pages="noOfPages" current-page="currentPage" class="pagination-small"></pagination>
+
+  </body>
+
+
+</html>
+
+                

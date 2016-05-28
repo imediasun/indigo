@@ -1,0 +1,51 @@
+body {
+/* padding-top: 60px;
+padding-bottom: 40px; */
+}
+
+.netro2{
+border-right:1px solid #eee;		
+display:inline-block;
+background:#eee;
+cursor:pointer;
+}
+
+
+.netro2 a {
+text-align:center;
+position:relative;
+margin:0 auto;
+	
+}
+
+.menu_horizont li{
+border:1px;
+z-index:111;
+}
+
+.bar_navy_gate{
+height:1px;
+}
+
+.menu_horizont li a{
+padding:0px 40px;	
+display:inline-block;
+height:27px;	
+}
+
+.bar_navy_gate{
+   
+
+}
+
+.menu_horizont li:first-child{
+margin-left:-30px;	
+}
+
+.menu_horizont li a p{
+margin-top:-18px;	
+	
+}
+
+
+

@@ -1,0 +1,29 @@
+<!-- Menu\view\menu\index\index -->
+<div class="row">
+    <div class="col col-md-12">
+        <ul class="list-unstyled menu_horizont">
+		<!--массив длинный и пустой -->
+            <?php
+			/* foreach ($this->menu3 as $item) : */ ?>
+			<? /* if($item['name_menu']){ */?>
+             <li class="netro3 ">
+			 <a href=""<?php /* echo $this->url('menu', ['slug' => $item['slug']]); ?>"><?php echo $item['name_menu'];  */?></a>
+			 
+			 </li>
+			<?
+			/* } */
+			?> 
+            <?php /* endforeach  */?>
+        </ul>
+    </div>
+</div>
+
+
+<div>
+<?
+print($this->content);
+?>
+</div>
+<script>
+
+</script>

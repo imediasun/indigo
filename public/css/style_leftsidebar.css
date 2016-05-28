@@ -1,0 +1,10 @@
+.leftside{
+	height:200px;
+	background:#eee;
+	float:left;
+	display:inline-block;
+}
+.rightside{
+	height:200px;
+	background:#ee9;
+}
